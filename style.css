@@ -101,6 +101,17 @@ a:hover { color: var(--brand); }
 .platforms { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
 .platforms span { background: var(--chip); border-radius: 8px; padding: 3px 10px; font-size: 14px; color: var(--muted); }
 
+/* Screenshots */
+.shot { margin: 8px 0 56px; }
+.shot img { display: block; width: 100%; height: auto; border-radius: 16px; border: 1px solid var(--line); box-shadow: 0 24px 60px -28px rgba(60, 30, 10, 0.35); }
+.shot figcaption { color: var(--muted); font-size: 15px; margin-top: 12px; text-align: center; }
+.split { margin-top: 56px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr); gap: 40px; align-items: center; }
+.split h2 { font-size: 28px; font-weight: 600; margin: 4px 0 12px; letter-spacing: -0.01em; text-wrap: balance; }
+.split p { margin: 0 0 12px; }
+.split .muted { color: var(--muted); font-size: 16px; }
+.split .tag { font-size: 13px; font-weight: 500; letter-spacing: 0.03em; text-transform: uppercase; color: var(--brand-ink); }
+.split-shot { width: 100%; max-width: 440px; justify-self: center; height: auto; border-radius: 22px; box-shadow: 0 24px 60px -28px rgba(60, 30, 10, 0.4); }
+
 /* Documents: privacy, terms, support */
 .doc { max-width: 44em; padding-top: 48px; }
 .doc h1 { font-size: clamp(32px, 5vw, 44px); font-weight: 600; letter-spacing: -0.02em; margin: 0 0 8px; }
@@ -117,6 +128,7 @@ a:hover { color: var(--brand); }
   .hero-art { justify-self: stretch; width: 100%; }
   .features { grid-template-columns: minmax(0, 1fr); }
   .band { grid-template-columns: minmax(0, 1fr); }
+  .split { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 420px) {
   .word { font-size: 21px; }
